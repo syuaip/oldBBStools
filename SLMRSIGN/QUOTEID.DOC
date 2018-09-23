@@ -1,0 +1,198 @@
+**************** Header&Sign Tool for SLMR 2.1a - V.1.1 ****************
+
+
+INTRODUKSI
+----------
+Bila dibandingkan dengan BlueWave, SLMR 2.1a tidak mempunyai fasilitas
+khusus untuk membuat header reply dan sign. Pada BlueWave user dapat
+merancang bentuk header reply dan dapat mendefinisi sign yang disukai.
+Sedangkan di SLMR... <sigh>... ;)
+
+Well... Program ini hanya salah satu jalan keluar bagi anda, pemakai SLMR.
+
+Header yang akan dibuat di awal reply dapat bervariatif, tergantung dari
+keinginan. Dalam penggunaannya, telah dicoba untuk diadaptasi kelebihan
+dari BlueWave, yaitu penggunaan variabel-variabel yang mewakili informasi
+dari mail akan direply.
+
+Semoga bermanfaat!
+
+
+CARA PEMAKAIAN
+--------------
+Lakukan setting berikut pada SLMR...
+
+ * Pilihan "When to edit reply info", haruslah 'Before edit'.. atau
+   'Before and after edit'
+   (Harus ada pilihan Before)>ฤฤฟ
+                                ภฤฤฤฟ
+   ษ Configuration อออออออออออออออออณออออออออออออออออออออออออออออ Replies ป
+   บ                                ณ
+   บ These options control how SLMR ณandles your replies and the quoted   ฑ
+   บ original text.                 ณ                                     ฑ
+   บ                                ณ                                     ฑ
+   บ When to edit reply info        ภฤ>Before and after edit              ฑ
+   บ                                   ^^^^^^                             ฑ
+   บ Reply quoting style               All                                ฑ
+   บ Quoting prefix string             >                                  ฑ
+   บ Message header in quoted reply    Yes                                ฑ
+   บ                                                                      ฑ
+   บ Enable taglines                   Random                             Û
+   บ Fido-style taglines               Yes                                ฑ
+   บ                                                                      ฑ
+   บ (Press SPACE or F2 to change options)                                ฑ
+   บ                                                                      ฑ
+   บ                                                                      ฑ
+   บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฑ
+   บ            Determines when to edit the reply information             ฑ
+   ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+ * Sebaiknya tombol yang digunakan untukmengaktifkan QUOTEID.EXE tidak jauh
+   dari tombol F10 (tombol Ok-nya SLMR).
+   Salah satu contoh setting yang dapat anda gunakan :
+
+   ษ Configuration ออออออออออออออออออออออออออออออออออออออออ Function keys ป
+   บ
+   บ SLMR allows you to specify commands that should be executed when one ฑ
+   บ of the following function keys is pressed.  Two special commands are ฑ
+   บ SAVE and VIEW.  For example:                                         ฑ
+   บ                                                                      ฑ
+   บ       SAVE C:\QWK\SAVE.TXT      (saves current message)              ฑ
+   บ       VIEW SESSION.TXT          (displays SESSION.TXT)               ฑ
+   บ       QMODEM                    (runs a communications program)      ฑ
+   บ                                                                      ฑ
+   บ F3                                                                   ฑ
+   บ F4                                                                   ฑ
+   บ F5                                                                   ฑ
+   บ F6                                                                   ฑ
+   บ F7                                                                   ฑ
+   บ F8    edit c:\slmr\quoteid.ini    <ฤฤ Untuk mengedit bentuk quote    ฑ
+   บ F9    c:\slmr\quoteid.exe !       <ฤฤ Untuk menjalankan tools ini    ฑ
+   บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฑ
+   บ       DOS command to execute when this function key is pressed       Û
+   ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+    Tombol F9 untuk memanggil QUOTEID.EXE dan
+    Tombol F8 untuk mengubah bentuk Sign dan Header pada QUOTEID.INI
+
+    Untuk memanggil QUOTEID.EXE agar dapat bekerja untuk SLMR,
+    sertakan sebuah parameter (apa saja selain '/?').
+    Pada contoh di atas, penulis menyertakan parameter '!'
+    Pemanggilan QUOTEID.EXE tanpa parameter hanya akan menampilkan
+    nama program dan saran untuk membaca dokumentasi ini.
+
+    Sebaiknya anda letakkan file QUOTEID.EXE dan QUOTEID.INI dalam
+    directory yang sama dengan SLMR.
+
+Jika setting telah siap, coba dengan SLMR anda buka satu pake QWK,
+kemudian saat anda tekan 'R' untuk reply akan keluar dialog ini
+
+  ษ New Reply Info ออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ                                                                      บ
+  บ       From: MIRAGE                               Private: No         บ
+  บ         To: YOD                           Silicon copies: No         บ
+  บ    Subject: I'm Back!!!                                              บ
+  บ                                                                      บ
+  บ Conference: 2     Rb+general                                         บ
+  บ                                                                      บ
+  บ    Tagline: here@there.edu ? Don't ask me. I'm lost too...           บ
+  บ                                                                      บ
+  บ          F10-Ok      ESC-Cancel      F1-Help      F2-Picklist        บ
+  บ                                                                      บ
+  ศออออออออออออออออออออออ Press F10 to edit reply อออออออออออออออออออออออผ
+
+  Sebelum anda menekan tombol F10, tekanlah tombol F9 untuk
+  meng-eksekusi QUOTEID.EXE
+  Kemudian barulah tombol F10 ditekan...
+  Maka  *Voila!*  pada reply yang anda akan edit telah memuat
+  header dan sign anda... :)
+
+
+MAKRO YANG DAPAT DIPERGUNAKAN
+-----------------------------
+ Berikut adalah makro-makro yang dapat digunakan untuk membuat
+ header dan sign.
+
+   #N#        = New Line
+   #D#        = Date
+   #TI#       = Time
+   #F#        = From
+   #FF#       = From (First Name)
+   #FL#       = From (Last Name)
+   #IFFROM#   = From (username on internet address)
+   #IADDR#    = From (domainname on internet address)
+   #O#        = LOGIN ID
+   #OF#       = LOGIN ID (First Name)
+   #OL#       = LOGIN ID (Last Name)
+   #T#        = To
+   #TF#       = To (First Name)
+   #TL#       = To (Last Name)
+   #S#        = Subject
+
+ Contoh :
+
+  Misalkan pada sabtu pagi, jam 02.30 anda mendapat mail dari
+  TAMARA BLEZINSKY di forum SP_ADULT  :) :) ;) yang isinya :
+
+    Dear Otong,
+    Utang ente kok nggak dibayar bayar sih ?
+
+    Tamara B.
+
+  Jika isi file QUOTEID.INI adalah :
+  QUOTE=>>> Quoting from #F# to #T##N#>>> on #C# at #D#/#TI#
+  SIGN=~ With kiss to #FF#... #N##N#~ Otong Pararotong#N#~ otong@tu.la.lit
+
+  Maka, bentuk reply anda adalah seperti ini :
+
+
+      >>> Quoting from TAMARA BLEZINSKY to OTONG PARAROTONG
+      >>> on SP_ADULT at 02-10-96/02:30
+
+      TB>Dear Otong,
+      TB>Utang ente kok nggak dibayar bayar sih ?
+      TB>
+      TB>Tamara B.
+      TB>
+      TB>
+      ~ With kiss to TAMARA...
+
+      ~ Otong Pararotong
+      ~ otong@tu.la.lit
+
+        * SLMR 2.1a * - Tagline! Tagline! Tagline! Tagline!
+
+
+Fasilitas makro yang ada kurang lebih sama dengan fasilitas serupa
+pada BlueWave. Perbedaannya adalah jika pada BlueWave tanda pemisah
+default yang digunakan adalah @N@, maka disini adalah #N#.
+Untuk menggantinya, bisa disertakan baris berikut di file QUOTEID.INI :
+
+  DELIMITER=<tandapemisah yang diinginkan>
+
+misalkan.. jika diinginkan '$' sebagai tanda pemisah, maka sertakan
+baris ini di QUOTEID.INI :
+
+  DELIMITER=$
+
+Penggantian tanda pemisah default ini semula untuk mengurangi kompleksitas
+dalam mendapatkan user-name dan domain-name pada mail di Internet.
+
+
+PENUTUP
+-------
+Terima kasih Abimanyu W. , Teguh Iman,
+   user-user RedBlock BBS dan Pusdata Online.
+(Abi, sebenarnya nama ente pengen ditulis lengkap..
+   Tapi.. lupa sih. So daripada ente ngambek karena nama salah.. #)
+
+All software mentioned on this document are copyrighted
+  by their respected owners.
+
+All person mentioned on this document are beloved
+  by their caring lovers  ;)
+
+[Mirage]
+
+*************************** End of Document *****************************
+
